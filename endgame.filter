@@ -99,7 +99,7 @@ Show
     SetBorderColor 0 175 255
     SetFontSize 38
 
-Show
+Hide
     Class "Rings" "Amulet" "Belts"
     BaseType "Diamond" "Moonstone" "Prismatic" "Two-Stone" "Ruby" "Sapphire" "Topaz" "Unset" "Gold" "Coral Ring" "Onyx" "Citrine" "Turquoise" "Agate" "Amber" "Jade" "Lapis" "Leather" "Heavy" "Rustic"
 	Rarity <= Magic
@@ -107,19 +107,19 @@ Show
     SetBorderColor 184 218 242
     SetFontSize 32
 
-Show
+Hide
     BaseType "Vaal Regalia" "Hubris Circlet" "Royal Burgonet" "Lion Pelt" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Titan Greaves" "Slink Boots"  "Sorcerer Boots" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titanium Spirit Shield" 
     Rarity <= Magic
     ItemLevel >= 84
     SetFontSize 32
 	
-Show
+Hide
     BaseType "Ambusher" "Demon Dagger" "Skean" "Kris" "Void Sceptre" "Sambar Sceptre" "Imbued Wand" "Profane Wand" 
     Rarity <= Magic
     ItemLevel >= 84
     SetFontSize 32
 
-Show
+Hide
     BaseType "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Harbinger Bow" "Gemini Claw" "Siege Axe" "Harpy Rapier" "Spiraled Foil" "Jewelled Foil"
     Rarity <= Magic
     ItemLevel >= 83
@@ -137,11 +137,11 @@ Hide
 
 #   RECIPES AND SPECIALS
 
-Hide
+Show
     BaseType "Gavel" "Rock Breaker" "Stone Hammer"
     Rarity = Normal
     SetBackgroundColor 75 75 75
-    SetBorderColor 0 0 0
+    SetBorderColor 150 150 150
     SetFontSize 32
 
 Hide
@@ -254,6 +254,13 @@ Show
     Rarity = Rare
     SetBorderColor 210 0 0
     SetFontSize 38
+
+Hide 
+	Corrupted True
+	Class "One Hand" "Wands" "Daggers" "Claws" "Sceptres" "Two Hand" "Bows" "Staves" "Helmets" "Shields" "Body Armour"
+	Rarity = Rare
+	SetBorderColor 210 0 0
+    SetFontSize 32
 
 #   TOP TIER RARES
 
@@ -420,20 +427,20 @@ Show
     Class "Gems"
 	SetTextColor 37 218 209
     SetBorderColor 37 218 209
-    SetFontSize 40
+    SetFontSize 42
     PlayAlertSound 3 150
 
 Show
     Class "Gem"
-    BaseType "Enlighten" "Vaal Breach" "Item Quantity"
+    BaseType "Enlighten" "Enhance" "Empower" "Vaal Breach" "Item Quantity"
 	SetTextColor 37 218 209
     SetBorderColor 37 218 209
-    SetFontSize 40
+    SetFontSize 42
     PlayAlertSound 3 150
 
 Show
     Class "Gem"
-    BaseType "Portal" "Enhance" "Empower" "Detonate Mines" "Added Chaos Damage" "Vaal" 
+    BaseType "Portal" "Detonate Mines" "Added Chaos Damage" "Vaal" 
     SetBorderColor 27 162 155
     SetFontSize 36
 
@@ -459,7 +466,7 @@ Show
 Show
     DropLevel >= 82
     Class "Maps"
-    SetBorderColor 208 32 144
+    SetBorderColor 208 32 144 210
     SetBackgroundColor 0 0 0 255
     SetFontSize 45
     PlayAlertSound 6 200
@@ -482,7 +489,7 @@ Show
     DropLevel >= 58
     Class "Maps"
     SetBorderColor 200 200 200 210
-    SetFontSize 38
+    SetFontSize 36
 
 Show
     Class "Maps"
@@ -507,7 +514,7 @@ Show
     SetTextColor 255 166 77
     SetBackgroundColor 0 0 0 255
     SetBorderColor 255 166 77
-    SetFontSize 42
+    SetFontSize 45
     PlayAlertSound 6 200
 
 Show
@@ -558,7 +565,7 @@ Show
     SetBackgroundColor 0 100 150 210
     SetBorderColor 255 200 0
     SetFontSize 40
-    PlayAlertSound 7 150
+    PlayAlertSound 8 150
 
 Show
     Class "Currency"
@@ -622,7 +629,7 @@ Show
     Class "Divination"
     BaseType "The Wolf's Shadow"
     SetTextColor 14 186 255
-    SetFontSize 36
+    SetFontSize 40
     PlayAlertSound 1 150
 
 Show
@@ -639,7 +646,7 @@ Show
     BaseType "Chaotic Disposition" "The Void" "The Cartographer" "The Dapper Prodigy" "The Vast" "The Dark Mage" "Last Hope" "The Valkyrie" "The Sephirot" "Time-Lost Relic" "The Hoarder" "Emperor of Purity" "The Chains that Bind" "The Warlord" "The Wolf" "The Aesthete" "Earth Drinker" "Saint's Treasure" "Standoff" "The Road to Power" "The Arena Champion" "The Gladiator" "The Stormcaller" "Glimmer of Hope" "The Tyrant" "The Cursed King" "Lost Worlds" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Surveyor" "Lysah's Respite" "The Inventor" "The Soul" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Body" "The Encroaching Darkness" "Jack in the Box" "The Traitor" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Opulent" "Might is Right" "The Fletcher" "The Forsaken" "The Porcupine" "The Formless Sea" "Heterochromia" "Merciless Armament"
     SetTextColor 14 186 255
     SetBorderColor 14 186 255
-    SetFontSize 40
+    SetFontSize 42
     PlayAlertSound 1 150
 
 Show
@@ -651,7 +658,7 @@ Show
 Show
     Class "Divination"
     SetTextColor 14 186 255
-    SetFontSize 36
+    SetFontSize 40
     PlayAlertSound 1 150
 
 #   UNIQUES
