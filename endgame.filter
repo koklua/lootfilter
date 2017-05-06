@@ -29,6 +29,7 @@ Show
 Show
     BaseType "Leather Belt"
     Rarity = Normal
+	Corrupted False
     SetTextColor 255 255 255
     SetBorderColor 175 96 37
     SetFontSize 36
@@ -110,7 +111,13 @@ Hide
     SetFontSize 32
 
 Hide
-    BaseType "Vaal Regalia" "Hubris Circlet" "Royal Burgonet" "Lion Pelt" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titanium Spirit Shield"
+    BaseType "Vaal Regalia" "Hubris Circlet" "Sorcerer Gloves" "Sorcerer Boots" "Titanium Spirit Shield"
+    Rarity <= Magic
+    ItemLevel >= 84
+    SetFontSize 32
+	
+Hide
+    BaseType "Royal Burgonet" "Lion Pelt" "Titan Gauntlets" "Slink Gloves" "Titan Greaves" "Slink Boots" 
     Rarity <= Magic
     ItemLevel >= 84
     SetFontSize 32
@@ -122,7 +129,7 @@ Hide
     SetFontSize 32
 
 Hide
-    BaseType "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Harbinger Bow" "Gemini Claw" "Siege Axe" "Harpy Rapier" "Spiraled Foil" "Jewelled Foil"
+    BaseType "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Harbinger Bow" "Maraketh Bow" "Gemini Claw" "Siege Axe" "Harpy Rapier" "Jewelled Foil" "Dragoon Sword"
     Rarity <= Magic
     ItemLevel >= 83
     SetFontSize 32
@@ -269,9 +276,16 @@ Show
     SetTextColor 255 200 0
     SetBorderColor 255 200 0
     SetFontSize 38
+	
+Show
+    BaseType "Vaal Regalia" "Hubris Circlet" "Sorcerer Gloves" "Sorcerer Boots" "Titanium Spirit Shield"
+    Rarity = Rare
+    ItemLevel >= 84
+    SetTextColor 255 200 0
+    SetFontSize 36
 
 Show
-    BaseType "Vaal Regalia" "Hubris Circlet" "Royal Burgonet" "Lion Pelt" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titanium Spirit Shield"
+    BaseType "Royal Burgonet" "Lion Pelt" "Titan Gauntlets" "Slink Gloves" "Titan Greaves" "Slink Boots"
     Rarity = Rare
     ItemLevel >= 84
     SetTextColor 255 200 0
@@ -285,7 +299,7 @@ Show
     SetFontSize 36
 
 Show
-    BaseType "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Harbinger Bow" "Gemini Claw" "Siege Axe" "Harpy Rapier" "Spiraled Foil" "Jewelled Foil"
+    BaseType "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Harbinger Bow" "Maraketh Bow" "Gemini Claw" "Siege Axe" "Harpy Rapier" "Jewelled Foil" "Dragoon Sword"
     Rarity = Rare
     ItemLevel >= 83
     SetTextColor 255 200 0
@@ -431,13 +445,13 @@ Show
     Class "Gem"
     BaseType "Portal" "Detonate Mines" "Added Chaos Damage" "Vaal"
     SetBorderColor 27 162 155
-    SetFontSize 36
+    SetFontSize 38
 
 Show
     Quality >= 5
     Class "Gems"
     SetBorderColor 27 162 155
-    SetFontSize 36
+    SetFontSize 38
 
 Hide
     Class "Gems"
@@ -591,6 +605,7 @@ Show
     SetTextColor 14 186 255
     SetBorderColor 14 186 255
     SetFontSize 40
+    PlayAlertSound 1 150
 	
 Show
     Class "Currency"
