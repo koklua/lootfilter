@@ -185,12 +185,12 @@ Hide
 Hide
     Class "Currency"
     BaseType "Portal Scroll" "Scroll of Wisdom"
-    SetFontSize 32
+    SetFontSize 34
 
 Show
     Class "Currency"
     BaseType "Orb of Transmutation" "Blacksmith's" "Armourer's" "Orb of Augmentation" "Alchemy Shard" "Alteration Shard"
-    SetFontSize 40
+    SetFontSize 34
 
 Show
     Class "Currency"
@@ -247,7 +247,7 @@ Show
     Class "Amulet" "Belts" "Rings" "Gloves" "Boots" "Quivers"
     Rarity = Rare
     SetBorderColor 210 0 0
-    SetFontSize 38
+    SetFontSize 36
 
 Hide
     Corrupted True
@@ -282,28 +282,28 @@ Show
     Rarity = Rare
     ItemLevel >= 84
     SetTextColor 255 200 0
-    SetFontSize 36
+    SetFontSize 34
 
 Show
     BaseType "Royal Burgonet" "Lion Pelt" "Titan Gauntlets" "Slink Gloves" "Titan Greaves" "Slink Boots"
     Rarity = Rare
     ItemLevel >= 84
     SetTextColor 255 200 0
-    SetFontSize 36
+    SetFontSize 34
 
 Show
     BaseType "Ambusher" "Demon Dagger" "Skean" "Kris" "Void Sceptre" "Sambar Sceptre" "Imbued Wand" "Profane Wand"
     Rarity = Rare
     ItemLevel >= 84
     SetTextColor 255 200 0
-    SetFontSize 36
+    SetFontSize 34
 
 Show
     BaseType "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Harbinger Bow" "Maraketh Bow" "Gemini Claw" "Siege Axe" "Harpy Rapier" "Jewelled Foil" "Dragoon Sword"
     Rarity = Rare
     ItemLevel >= 83
     SetTextColor 255 200 0
-    SetFontSize 36
+    SetFontSize 34
 	
 # QUALITY CHAOS RECIPE
 
@@ -314,7 +314,7 @@ Show
     Rarity = Rare
     ItemLevel >= 60
     SetTextColor 210 0 220
-    SetFontSize 36
+    SetFontSize 32
 
 Show
     Identified False
@@ -324,7 +324,7 @@ Show
     ItemLevel >= 60
     SetTextColor 210 0 220
     SetBorderColor 210 0 220
-    SetFontSize 38
+    SetFontSize 36
 	
 # GOOD RARE BASES
 
@@ -340,55 +340,60 @@ Show
     BaseType "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
     Rarity = Rare
     SetBorderColor 0 175 255 210
-    SetFontSize 38
+    SetFontSize 36
 
 Show
     Class "Rings" "Amulets" "Belts" "Jewel"
     Rarity = Rare
     SetBorderColor 255 255 119
-    SetFontSize 38
+    SetFontSize 36
+	
+Hide
+    BaseType "Vaal Regalia" "Hubris Circlet" "Sorcerer Gloves" "Sorcerer Boots" "Titanium Spirit Shield"
+    Rarity = Rare
+    SetFontSize 32
 
-Show
+Hide
     DropLevel > 58
     Class "Thrusting" "Wand" "Daggers" "Claws" "One Hand" "Sceptres"
     Rarity = Rare
-    SetFontSize 36
+    SetFontSize 32
 
-Show
+Hide
     DropLevel > 59
     Class "Two Hand" "Bows" "Staves"
     Rarity = Rare
-    SetFontSize 36
+    SetFontSize 32
 
-Show
+Hide
     DropLevel > 62
     Class "Gloves" "Helmets" "Boots"
     Rarity = Rare
-    SetFontSize 36
+    SetFontSize 32
 
-Show
+Hide
     Height = 2
     DropLevel > 59
     Class "Shields"
     Rarity = Rare
-    SetFontSize 36
+    SetFontSize 32
 
-Show
+Hide
     Height > 2
     DropLevel > 60
     Class "Shields"
     Rarity = Rare
-    SetFontSize 36
+    SetFontSize 32
 
-Show
-    BaseType "Glorious Plate" "Astral Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Saintly Chainmail" "Saint's Hauberk" "Carnal Armour" "Sadist Garb"
+Hide
+    BaseType "Glorious Plate" "Astral Plate" "Zodiac Leather" "Assassin's Garb" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Saintly Chainmail" "Saint's Hauberk" "Carnal Armour" "Sadist Garb"
     Rarity = Rare
-    SetFontSize 36
+    SetFontSize 32
 
-Show
+Hide
     BaseType "Spike-Point Arrow Quiver" "Broadhead Arrow Quiver"
     Rarity = Rare
-    SetFontSize 36
+    SetFontSize 32
 	
 # HIDE RARE TRASH
 
@@ -658,9 +663,9 @@ Show
     SetFontSize 42
     PlayAlertSound 1 150
 
-Show
+Hide
     Class "Divination"
-    BaseType "Carrion Crow" "King's Blade" "Thunderous Skies" "The Scarred Meadow" "The Metalsmith's Gift" "Turn the Other Cheek"
+    BaseType "Carrion Crow" "King's Blade" "Thunderous Skies" "The Scarred Meadow" "The Metalsmith's Gift" "Turn the Other Cheek" "The Hermit"
     SetTextColor 14 186 255
     SetFontSize 32
 
@@ -709,7 +714,7 @@ Show
     Class "Quest" "Items"
     SetFontSize 36
 	
-#CATCH FORGOTTEN ITEMS
+#DISPLAY FORGOTTEN ITEMS
 
 Show
     SetTextColor 255 255 255
