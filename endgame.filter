@@ -50,7 +50,15 @@ Show
 
 Show
     Corrupted True
-    Class "Belts" "Amulets" "Quivers" "Boots" "Gloves"
+    Class "Belts" "Amulets" "Quivers"
+    Rarity = Normal
+    SetBorderColor 210 0 0
+    SetFontSize 36
+	
+Show
+    Corrupted True
+    Class "Boots" "Gloves"
+	DropLevel > 62
     Rarity = Normal
     SetBorderColor 210 0 0
     SetFontSize 36
@@ -59,8 +67,8 @@ Show
     Sockets = 3
     SocketGroup "W"
     Class "Wands" "Daggers" "One Hand" "Shields" "Thrusting" "Sceptre" "Claws"
-    Rarity <= Magic
-    SetBorderColor 210 0 0
+    Rarity <= Rare
+    SetBorderColor 27 162 155
     SetFontSize 36
 	
 Show
@@ -244,10 +252,19 @@ Show
 
 Show
     Corrupted True
-    Class "Amulet" "Belts" "Rings" "Gloves" "Boots" "Quivers"
+    Class "Amulet" "Belts" "Rings" "Quivers"
     Rarity = Rare
     SetBorderColor 210 0 0
     SetFontSize 36
+	
+Show
+    Corrupted True
+    Class "Boots" "Gloves"
+    Rarity = Rare
+	DropLevel > 62
+    SetBorderColor 210 0 0
+    SetFontSize 36
+
 
 Hide
     Corrupted True
@@ -515,15 +532,6 @@ Show
     SetFontSize 40
 
 Show
-    Class "Misc Map Items"
-    BaseType "Ancient Reliquary Key"
-    SetTextColor 255 166 77
-    SetBackgroundColor 0 0 0
-    SetBorderColor 255 166 77
-    SetFontSize 45
-    PlayAlertSound 6 200
-
-Show
     Class "Map Fragments"
     BaseType "Fragment of the Phoenix" "Fragment of the Minotaur" "Fragment of the Chimera" "Fragment of the Hydra"
     SetTextColor 255 255 255
@@ -562,6 +570,15 @@ Show
     SetBackgroundColor 0 0 0
     SetBorderColor 120 0 179
     SetFontSize 40
+	
+Show
+    Class "Misc Map Items"
+    BaseType "Ancient Reliquary Key"
+    SetTextColor 255 166 77
+    SetBackgroundColor 0 0 0
+    SetBorderColor 255 166 77
+    SetFontSize 45
+    PlayAlertSound 6 200
 	
 # SPECIAL CURRENCY
 
@@ -648,7 +665,7 @@ Show
 
 Show
     Class "Divination"
-    BaseType "House of Mirrors" "The Doctor" "The Fiend" "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Brittle Emperor" "The Immortal" "The Artist" "The Thaumaturgist" "Wealth and Power" "Pride Before the Fall" "The Enlightened" "The King's Heart" "Bowyer's Dream" "The Hunger" "The Celestial Justicar" "Spark and the Flame" "Polymath"
+    BaseType "House of Mirrors" "The Doctor" "The Fiend" "Hunter's Reward" "The Dragon's Heart" "Mawr Blaidd" "The Last One Standing" "The Offering" "The Ethereal" "The Queen" "Abandoned Wealth" "The Immortal" "The Artist" "The Thaumaturgist" "Wealth and Power" "Bowyer's Dream" "The Celestial Justicar" "Spark and the Flame" "Polymath" "Last Hope" "The Vast" "Saint's Treasure" "The Valkyrie" "The Sephirot"
     SetTextColor 102 212 255
     SetBackgroundColor 0 0 0
     SetBorderColor 102 212 255
@@ -657,7 +674,7 @@ Show
 
 Show
     Class "Divination"
-    BaseType "Chaotic Disposition" "The Void" "The Cartographer" "The Dapper Prodigy" "The Vast" "The Dark Mage" "Last Hope" "The Valkyrie" "The Sephirot" "Time-Lost Relic" "The Hoarder" "Emperor of Purity" "The Chains that Bind" "The Warlord" "The Wolf" "The Aesthete" "Earth Drinker" "Saint's Treasure" "Standoff" "The Road to Power" "The Arena Champion" "The Gladiator" "The Stormcaller" "Glimmer of Hope" "The Tyrant" "The Cursed King" "Lost Worlds" "The Union" "The Risk" "The Trial" "Scholar of the Seas" "Lucky Deck" "Humility" "The Surveyor" "Lysah's Respite" "The Inventor" "The Soul" "The Jester" "Vinia's Token" "Rats" "The Wrath" "Hope" "Treasure Hunter" "The Body" "The Encroaching Darkness" "Jack in the Box" "The Traitor" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Opulent" "Might is Right" "The Fletcher" "The Forsaken" "The Porcupine" "The Formless Sea" "Heterochromia" "Merciless Armament"
+    BaseType "Chaotic Disposition" "The Void" "The Cartographer" "The Dapper Prodigy" "The Dark Mage" "Time-Lost Relic" "The Hoarder" "Emperor of Purity" "The Chains that Bind" "The Warlord" "The Wolf" "The Aesthete" "Standoff" "The Stormcaller" "The Cursed King" "The Risk" "Scholar of the Seas" "Lucky Deck" "Humility" "Vinia's Token" "Valley of Steel Boxes" "Wolven King's Bite" "Wretched" "The Porcupine" "The Formless Sea" "Heterochromia" "Merciless Armament" "The Brittle Emperor" "The Hunger"  "Pride Before the Fall" "The King's Heart" "The Enlightened" "The Wind" "Lingering Remnants" "The Watcher"
     SetTextColor 14 186 255
     SetBorderColor 14 186 255
     SetFontSize 42
@@ -714,7 +731,7 @@ Show
     Class "Quest" "Items"
     SetFontSize 36
 	
-#DISPLAY FORGOTTEN ITEMS
+#CATCH FORGOTTEN ITEMS
 
 Show
     SetTextColor 255 255 255
